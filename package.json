@@ -1,5 +1,5 @@
 {
-  "name": "vue-form-generator-element",
+  "name": "@initafricahq/vue-form-generator-element",
   "version": "0.0.1",
   "description": "Element (https://element-plus.org) fields for vue-form-generator",
   "repository": {
@@ -67,5 +67,8 @@
     "vue-tsc": "^1.0.9"
   },
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "private": false
 }
