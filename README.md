@@ -1,38 +1,52 @@
 # Vue Form Generator Element
-It is Fields for [Vue-form-generator](https://github.com/vue-generators/vue-form-generator) using the Element Plus UI (https://element-plus.org). It is the continuation of the original work Vue Form Generator (https://github.com/egorzot/vue-form-generator-element) by Egor Zotov currently. Has it is currently unmaintained and has been a useful tool to us. We have decided to continue with it and hope you'd find it helpful and useful.
+This is an Element Plus UI (https://element-plus.org) Fields for [Vue-form-generator](https://github.com/vue-generators/vue-form-generator). It is the continuation of the original Element UI Field Vue Form Generator work (https://github.com/egorzot/vue-form-generator-element) by Egor Zotov currently. As it is currently unmaintained and has been a useful tool to us. We have decided to continue with it and hope you'd find it helpful and useful.
 
 ### Usage
 
 ```
-npm install @initafrica/vue-form-generator-element
+npm install @initafricahq/vue-form-generator-element
 ```
 
 Add following code in main.js:
 ```
-import VueFormGeneratorElement from '@initafrica/vue-form-generator-element'
+import { createApp } from 'vue'
+import App from './App.vue'
+import VueFormGeneratorElement from '@initafricahq/vue-form-generator-element'
 
-Vue.use(VueFormGeneratorElement)
+return createApp(App)
+  .use(VueFormGenerator)
+  .mount('#app');
 ```
 
 See usage [example](https://github.com/egorzot/vue-form-generator-element-example).
 
 Fields list:
 
-* [fieldElementInput](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/master/src/fields/fieldElementInput.vue)
-* [fieldElementSelect](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/master/src/fields/fieldElementSelect.vue)
-* [fieldElementRadio](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/master/src/fields/fieldElementRadio.vue)
-* [fieldElementCheckbox](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/master/src/fields/fieldElementCheckbox.vue)
-* [fieldElementDatePicker](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/master/src/fields/fieldElementDatePicker.vue)
-* [fieldElementSwitch](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/master/src/fields/fieldElementSwitch.vue)
-* [fieldElementTextArea](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/master/src/fields/fieldElementTextArea.vue)
-* [fieldElementUpload](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/master/src/fields/fieldElementUpload.vue)
-* [fieldElementColorPicker](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/master/src/fields/fieldElementColorPicker.vue)
-* [fieldElementSlider](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/master/src/fields/fieldElementSlider.vue)
+* [FieldElementInput](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/main/src/fields/FieldElementInput.vue)
+* [FieldElementSelect](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/main/src/fields/FieldElementSelect.vue)
+* [FieldElementRadio](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/main/src/fields/FieldElementRadio.vue)
+* [FieldElementCheckbox](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/main/src/fields/FieldElementCheckbox.vue)
+* [FieldElementCheckboxList](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/main/src/fields/FieldElementCheckboxList.vue)
+* [FieldElementDatePicker](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/main/src/fields/FieldElementDatePicker.vue)
+* [FieldElementSwitch](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/main/src/fields/FieldElementSwitch.vue)
+* [FieldElementTextArea](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/main/src/fields/FieldElementTextArea.vue)
+* [FieldElementUpload](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/main/src/fields/FieldElementUpload.vue)
+* [FieldElementColorPicker](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/main/src/fields/FieldElementColorPicker.vue)
+* [FieldElementSlider](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/main/src/fields/FieldElementSlider.vue)
 
 ### Contribution
-PR's are welcome!
+PR's are more than welcome!
+
+<a href="https://github.com/InitAfricaHQ/vue-form-generator-element/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=InitAfricaHQ/vue-form-generator-element" />
+</a>
 
 ### Tests
 ```
 npm run test
 ```
+
+## License
+
+Vue Form Generator Element Plus is open source software licensed as
+[MIT](https://github.com/InitAfricaHQ/vue-form-generator-element/blob/main/LICENSE).
