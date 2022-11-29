@@ -1,6 +1,6 @@
 {
   "name": "@initafricahq/vue-form-generator-element",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Element (https://element-plus.org) fields for vue-form-generator",
   "repository": {
     "type": "git",
@@ -28,7 +28,6 @@
   },
   "main": "./dist/vue-form-generator-element.umd.js",
   "module": "./dist/vue-form-generator-element.es.js",
-  "unpkg": "dist/vue-form-generator-element.global.js",
   "exports": {
     ".": {
       "import": "./dist/vue-form-generator-element.es.js",
