@@ -17,9 +17,15 @@
 <script>
 import { isBoolean } from "lodash";
 import abstractField from "@/fields/abstract.js";
+import { ElCheckbox, ElFormItem } from 'element-plus';
 
 export default {
   name: "FieldElementCheckbox",
+
+  components: {
+    ElFormItem,
+    ElCheckbox,
+  },
 
   mixins: [abstractField],
 

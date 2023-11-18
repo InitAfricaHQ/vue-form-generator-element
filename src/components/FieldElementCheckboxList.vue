@@ -21,9 +21,16 @@
 <script>
 import abstractField from "@/fields/abstract";
 import defaultValueSetter from "@/fields/default";
+import { ElCheckbox, ElCheckboxGroup, ElFormItem } from 'element-plus';
 
 export default {
   name: "FieldElementCheckboxList",
+
+  components: {
+    ElFormItem,
+    ElCheckbox,
+    ElCheckboxGroup,
+  },
 
   mixins: [abstractField, defaultValueSetter],
 

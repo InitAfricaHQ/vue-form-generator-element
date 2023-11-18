@@ -87,11 +87,18 @@
 import { isNumber, debounce, isFunction } from "lodash";
 import abstractField from "@/fields/abstract";
 import defaultValueSetter from "@/fields/default";
+import { ElInput, ElAlert, ElFormItem } from 'element-plus';
 
 const DEBOUNCE_FORMAT_MS = 1000;
 
 export default {
   name: "FieldElementInput",
+
+  components: {
+    ElFormItem,
+    ElInput,
+    ElAlert,
+  },
 
   data: () => ({
     allowedInputTypes: [

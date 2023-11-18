@@ -19,9 +19,15 @@
 <script>
 import abstractField from "@/fields/abstract.js";
 import defaultValueSetter from "@/fields/default";
+import { ElInput, ElFormItem } from 'element-plus';
 
 export default {
   name: "FieldElementTextArea",
+
+  components: {
+    ElFormItem,
+    ElInput,
+  },
 
   mixins: [abstractField, defaultValueSetter],
 };

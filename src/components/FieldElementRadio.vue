@@ -46,9 +46,16 @@
 <script>
 import abstractField from "@/fields/abstract";
 import defaultValueSetter from "@/fields/default";
+import { ElRadioGroup, ElRadio, ElFormItem } from 'element-plus';
 
 export default {
   name: "FieldElementRadio",
+
+  components: {
+    ElFormItem,
+    ElRadioGroup,
+    ElRadio,
+  },
 
   mixins: [abstractField, defaultValueSetter],
 

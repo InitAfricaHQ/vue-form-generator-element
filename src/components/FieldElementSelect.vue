@@ -41,9 +41,16 @@
 //todo: add grouping
 import { isObject, isNil, find } from "lodash";
 import abstractField from "@/fields/abstract";
+import { ElSelect, ElOption, ElFormItem } from 'element-plus';
 
 export default {
   name: "FieldElementSelect",
+
+  components: {
+    ElFormItem,
+    ElSelect,
+    ElOption,
+  },
 
   mixins: [abstractField],
 

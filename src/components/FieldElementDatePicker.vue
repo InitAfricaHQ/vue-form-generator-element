@@ -29,9 +29,15 @@
 <script>
 import abstractField from "@/fields/abstract";
 import defaultValueSetter from "@/fields/default";
+import { ElDatePicker, ElFormItem } from 'element-plus';
 
 export default {
   name: "FieldElementDatePicker",
+
+  components: {
+    ElFormItem,
+    ElDatePicker,
+  },
 
   mixins: [abstractField, defaultValueSetter],
 
